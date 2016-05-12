@@ -1,0 +1,15 @@
+example.my_page:
+  path: '/mypage/page'
+  defaults:
+    _controller: '\Drupal\example\Controller\ExampleController::myPage'
+    _title: 'My first page in Drupal8'
+  requirements:
+    _permission: 'access content'
+    
+example_my_form:
+  path: 'example/myform'
+  defaults:
+    _form: '\Drupal\example\Form\MyForm'
+    _title: 'My first form in Drupal8'
+  requirements:
+    _permission: 'access content'

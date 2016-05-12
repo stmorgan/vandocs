@@ -1,0 +1,7 @@
+scott.mypage:
+  path: '/scott/myform'
+  defaults:
+    _controller: '\Drupal\scott\Form\ScottPage'
+    _title: 'Scotts first page in Drupal8'
+  requirements:
+    _permission: 'access content'

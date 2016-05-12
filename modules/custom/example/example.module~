@@ -1,0 +1,18 @@
+<?php
+/**
+ * @File
+ * Example custom module for Drupal 8.
+ * @author Rakesh James
+ * https://www.youtube.com/embed/zoia8WZ6q5w
+ */
+/**
+ * Implements hook_theme().
+ */
+function example_theme() {
+    return array(
+        'youtube_formatter' => array(
+            'variables' => array('url' => NULL),
+            'template' => 'field-youtube',
+        ),
+    );
+}
