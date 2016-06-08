@@ -9,7 +9,31 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: #bbFFbb;  
+  background: white;  
+}
+
+.front-green {
+    background-color: #006940;
+    color: white;
+    text-align: center;
+    
+}
+
+.front-white {
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+.front-blue {
+    background-color: #003777;
+    color: white;
+    text-align: center;
+}
+
+.front-panel {
+    height: 30em;
+    width: 100%;
 }
  
 header {
@@ -20,6 +44,7 @@ header {
   background: white;
   right: 0;
   left: 0;
+  top: 0;
   margin-right: auto;
   margin-left: auto;
   z-index: 10;
@@ -38,11 +63,35 @@ header nav ul a{
   text-decoration: none;
 }
 
-
+#block-vandocs-branding {
+    display: inline;
+}
 #hamburger {
   width: 50px;
   float: right;
   display:none;
+}
+
+header + div {
+    height: 58px;
+}
+
+.layout-content {
+    /*position: relative;*/
+    /*top: 60;*/
+    /*margin: 40px;*/
+    margin-left: 40px;
+    margin-right: 40px;
+    /*margin-top: 60px; */
+    text-align: justify;
+}
+
+/*.front-page {*/
+/*    margin-top: 60px;*/
+/*}*/
+
+.front-page .layout-content {
+    margin: 0;
 }
 
 p {
@@ -60,9 +109,9 @@ nav {
 }
 
 nav ul{
-   background-color: #43a286;
+   background-color: white;
    overflow: hidden;
-   color: white; 
+   color: #003777; 
    padding: 0;
    text-align: center;
    margin: 0;
@@ -83,7 +132,7 @@ nav ul li{
 }
 
 nav ul li:hover {
-    background-color: #399077;
+    background-color: ##006940;
 }
 
 content {
@@ -113,7 +162,9 @@ section {
     display: none;
 }
 
-@media screen and (max-width: 510px) {
+
+
+@media screen and (max-width: 830px) {
    nav ul { 
         max-height: 0;
     }

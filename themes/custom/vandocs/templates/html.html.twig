@@ -1,7 +1,7 @@
 {#
 /**
  * @file
- * Default theme implementation for the basic structure of a single Drupal page.
+ * Theme override for the basic structure of a single Drupal page.
  *
  * Variables:
  * - logged_in: A flag indicating if user is logged in.
@@ -21,8 +21,6 @@
  *   placeholders.
  *
  * @see template_preprocess_html()
- *
- * @ingroup themeable
  */
 #}
 <!DOCTYPE html>
@@ -41,10 +39,5 @@
     {{ page }}
     {{ page_bottom }}
     <js-bottom-placeholder token="{{ placeholder_token|raw }}">
-      <script type="text/javascript">
-    $('.handle').on('click', function(){
-           $('nav ul').toggleClass('showing'); 
-        });
-     </script>
   </body>
 </html>
