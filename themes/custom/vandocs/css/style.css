@@ -82,6 +82,7 @@ header + div {
     /*margin: 40px;*/
     margin-left: 40px;
     margin-right: 40px;
+    max-width: 400px; 
     /*margin-top: 60px; */
     text-align: justify;
 }
@@ -92,6 +93,7 @@ header + div {
 
 .front-page .layout-content {
     margin: 0;
+    max-width: 100%;
 }
 
 p {
