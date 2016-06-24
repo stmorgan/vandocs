@@ -1,45 +1,78 @@
-* {
-  margin: 0;
-  padding: 0;
-  /*border: 1px solid black;*/
-  box-sizing: border-box;
-}
+
 
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
   background: white;  
+  box-sizing: border-box;
+}
+
+article li {
+    text-align: left;
+}
+.center-vertically {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .front-green {
-    background-color: #006940;
+    /*background-color: #006940;*/
+    background-color: hsl(157, 26%, 56%);
     color: white;
     text-align: center;
-    
+    /*position: relative;*/
+    /*font-size: 30px; */
 }
 
 .front-white {
     background-color: white;
-    color: black;
+    color: #444;
     text-align: center;
 }
 
 .front-blue {
-    background-color: #003777;
+    background-color: hsl(212, 38%, 58%);
     color: white;
     text-align: center;
 }
 
 .front-panel {
-    height: 30em;
+    height: 500px;
     width: 100%;
+    font-size: 40px;
+    position: relative; 
+    }
+
+.front-panel div {
+    left: 50%;
+    margin-right: -50%;
+   position: absolute;               
+   top: 50%;                         
+   -webkit-transform: translate(-50%, -50%);
+   -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+     -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);  
+ }
+
+.front-panel p {
+    position: absolute; 
+    left: 50%;
+    margin-right: -50%;
+    top: 50%;                         
+   -webkit-transform: translate(-50%, -50%);
+   -moz-transform:    translate(-50%, -50%);
+    -ms-transform:    translate(-50%, -50%);
+     -o-transform:    translate(-50%, -50%);
+    transform:        translate(-50%, -50%);  
 }
  
 header {
   position: fixed;
   margin: auto;
-  width: 100%;
+  width: 90%;
   /*max-width: 900px;*/
   background: white;
   right: 0;
@@ -53,6 +86,8 @@ header {
 header img {
   width: 70%;
   max-width: 200px;
+  margin-left: 8px;
+  margin-top: 8px;
 }
 
 header nav {
@@ -73,7 +108,7 @@ header nav ul a{
 }
 
 header + div {
-    height: 58px;
+    height: 59px;
 }
 
 .layout-content {
@@ -95,6 +130,7 @@ header + div {
     margin: 0;
     max-width: 100%;
 }
+
 
 p {
   padding-bottom: 10px;
@@ -134,7 +170,8 @@ nav ul li{
 }
 
 nav ul li:hover {
-    background-color: ##006940;
+    background-color: lightgrey;
+    color: black;
 }
 
 content {
@@ -189,6 +226,11 @@ section {
     #hamburger {
       display: block;
     }
+    
+    header {
+        width: 100%;
+    }
+    
     header nav {
       text-align: center;
       width: auto;
