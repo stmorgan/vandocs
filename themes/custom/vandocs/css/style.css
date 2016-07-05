@@ -68,6 +68,11 @@ article li {
      -o-transform:    translate(-50%, -50%);
     transform:        translate(-50%, -50%);  
 }
+
+.picture-panel {
+    background-image: url(../images/Ocean-and-Mountains-3-cp.jpg);
+    background-size: cover;
+}
  
 header {
   position: fixed;
