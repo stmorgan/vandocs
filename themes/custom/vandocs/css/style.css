@@ -3,9 +3,13 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "museo-sans","sans serif" !important;
   background: white;  
   box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+    text-align: left;
 }
 
 article li {
@@ -73,6 +77,58 @@ article li {
     background-image: url(../images/Ocean-and-Mountains-3-cp.jpg);
     background-size: cover;
 }
+
+.business-area-panel {
+    display: block;
+    position: static;
+    min-height: 500px; 
+}
+
+.business-area-panel div {
+    border: 1px solid #ccc;
+    width: 280px;
+    vertical-align: top;
+    font-size: 14px;
+    padding-top: 100px;
+}
+
+/*.business-area-panel h2 {*/
+/*    text-align: center;*/
+/*}*/
+
+/*img.accomplishment {*/
+/*    height: 50px;*/
+/*}*/
+
+
+div.learn-more {
+    height: 20px !important;
+    width: 150px ;
+    background-color: #bbb;
+    font-size: 14px;
+    position: static;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    left: 0;
+    right: 0;
+    transform: translate(0,0);
+}
+
+.float-left{
+    float: left;
+}
+
+.inline-block-center {
+  text-align: center;
+}
+.inline-block-center div {
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  height: 250px;
+}
  
 header {
   position: fixed;
@@ -120,12 +176,20 @@ header + div {
     /*position: relative;*/
     /*top: 60;*/
     /*margin: 40px;*/
-    margin-left: 40px;
-    margin-right: 40px;
-    max-width: 400px; 
+    margin: 0 auto;
+    max-width: 500px; 
     /*margin-top: 60px; */
     text-align: justify;
+    padding: 10px;
 }
+
+.accomplishment img{
+    height: 50px;
+    background-color: white;
+    padding: 5px;
+    max-width: 90%; 
+}
+
 
 /*.front-page {*/
 /*    margin-top: 60px;*/
