@@ -66,8 +66,9 @@
       <div class="front-green front-panel picture-panel" >
         
         
-       <div class="center-vertically">Analytics expertise driving business growth</div>
-        
+       <div class="center-vertically"><em>A Sense of Order</em><br />Analytics Expertise that Supports Business Decisions<br /><br />
+       </div>
+         <div class="learn-more"><a href="/node/30">Learn More</a></div>
       </div>
       <div class="front-white business-area-panel inline-block-center"> {# Business Area panel #}
       
@@ -101,44 +102,47 @@
          
       </div> {# end of Business Area panle #}
       
-      <div class="front-blue front-panel">
+      <div class="front-blue front-panel worked-with">
         
         
-        <div class="center-vertically accomplishment">A Sense of Accomplishment<br />
-        <span style="font-size: smaller">Who we've worked with</span>
-        <br />
-        
-        <img src="sites/default/files/corporate-logos/Honeywell.png" alt="Honeywell" />
-        <img src="sites/default/files/corporate-logos/OracleLogo.png" alt="Oracle" />
-        <img src="sites/default/files/corporate-logos/BDC-Logo.png" alt="Oracle" />
-        <img src="sites/default/files/corporate-logos/SonyLogo.png" alt="Oracle" />
-         <br />
-        
-        
-             <div class="learn-more"><a href="/node/37">Learn More</a></div>
+        <div class="center-vertically accomplishment"><em>A Sense of Accomplishment</em><br />
+          <span style="font-size: smaller">Who we've worked with</span>
+          <br /><br />
+          
+          <img src="sites/default/files/corporate-logos/Honeywell.png" alt="Honeywell" />
+          <img src="sites/default/files/corporate-logos/OracleLogo.png" alt="Oracle" />
+          <img src="sites/default/files/corporate-logos/BDC-Logo.png" alt="Oracle" />
+          <img src="sites/default/files/corporate-logos/SonyLogo.png" alt="Oracle" />
+           <br />
         
         </div>
         
+        <div class="learn-more"><a href="/node/37">Learn More</a></div>
       
       </div> {# End of blue panel #}
       
       <div class="front-white front-panel">
         
-        <div class="center-vertically">A Sense of Belonging: Our Mission and Core Values</div>
+        <div class="center-vertically"><em>A Sense of Belonging</em><br />Our Mission and Core Values<br />
+        </div>
+        <div class="learn-more"><a href="/node/38">Learn More</a></div>
         
       </div>
       
       <div class="front-green front-panel">
         
         
-        <div class="center-vertically">A Sense of Occasion</div>
+        <div class="center-vertically"><em>A Sense of Occasion</em></div>
         
         
       </div>
-      <div class="front-white front-panel">
-       <div class="center-vertically">Sitemap, privacy, copyright, phone number, email</div>
-      </div>
+
      
+      {% if page.footer %}
+        <footer role="contentinfo">
+        {{ page.footer }}
+       </footer>
+      {% endif %}
       
     </div>{# /.layout-content #}
 
@@ -146,10 +150,5 @@
 
   {#</main>#}
 
-  {% if page.footer %}
-    <footer role="contentinfo">
-      {{ page.footer }}
-    </footer>
-  {% endif %}
-
+ 
 </div>{# /.layout-container #}

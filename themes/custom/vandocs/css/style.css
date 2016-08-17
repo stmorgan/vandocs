@@ -3,7 +3,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "museo-sans","sans serif" !important;
+  font-family: 'Open Sans', sans-serif; !important;
   background: white;  
   box-sizing: border-box;
 }
@@ -45,11 +45,11 @@ article li {
 .front-panel {
     height: 500px;
     width: 100%;
-    font-size: 40px;
+    font-size: 30px;
     position: relative; 
     }
 
-.front-panel div {
+.front-panel>div {
     left: 50%;
     margin-right: -50%;
    position: absolute;               
@@ -59,12 +59,13 @@ article li {
     -ms-transform: translate(-50%, -50%);
      -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);  
+    padding: 0 10px;
  }
 
 .front-panel p {
     position: absolute; 
     left: 50%;
-    margin-right: -50%;
+    /*margin-right: -50%;*/
     top: 50%;                         
    -webkit-transform: translate(-50%, -50%);
    -moz-transform:    translate(-50%, -50%);
@@ -84,7 +85,10 @@ article li {
     min-height: 500px; 
 }
 
-.business-area-panel div {
+
+
+.business-area-panel>div {
+    position: relative;
     border: 1px solid #ccc;
     width: 280px;
     vertical-align: top;
@@ -92,27 +96,29 @@ article li {
     padding-top: 100px;
 }
 
-/*.business-area-panel h2 {*/
-/*    text-align: center;*/
-/*}*/
 
-/*img.accomplishment {*/
-/*    height: 50px;*/
-/*}*/
 
+.worked-with {
+    min-height: 500px; 
+}
 
 div.learn-more {
+    color: #444;
     height: 20px !important;
-    width: 150px ;
+    width: 80px ;
     background-color: #bbb;
     font-size: 14px;
-    position: static;
+    position: absolute;
+    bottom: 10px;
     padding: 10px;
-    margin: 10px;
+    margin: auto;
     display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
     left: 0;
     right: 0;
     transform: translate(0,0);
+    text-align: center;
 }
 
 .float-left{
@@ -122,18 +128,18 @@ div.learn-more {
 .inline-block-center {
   text-align: center;
 }
-.inline-block-center div {
+.inline-block-center>div {
   display: inline-block;
-  text-align: center;
+  text-align: left;
   padding: 10px;
   margin: 10px;
-  height: 250px;
+  height: 200px;
 }
  
 header {
   position: fixed;
   margin: auto;
-  width: 90%;
+  width: 100%;
   /*max-width: 900px;*/
   background: white;
   right: 0;
@@ -143,6 +149,11 @@ header {
   margin-left: auto;
   z-index: 10;
 } 
+
+header div:first-child {
+    width: 90%;
+    margin: auto;
+}
 
 header img {
   width: 70%;
@@ -173,14 +184,11 @@ header + div {
 }
 
 .layout-content {
-    /*position: relative;*/
-    /*top: 60;*/
-    /*margin: 40px;*/
     margin: 0 auto;
     max-width: 500px; 
-    /*margin-top: 60px; */
     text-align: justify;
     padding: 10px;
+    margin-top: 60px;
 }
 
 .accomplishment img{
@@ -189,11 +197,13 @@ header + div {
     padding: 5px;
     max-width: 90%; 
 }
-
-
-/*.front-page {*/
-/*    margin-top: 60px;*/
-/*}*/
+.experience-logo img {
+    height: 50px;
+    background-color: white;
+    padding: 5px;
+    max-width: 90%;
+    margin: 10px;
+}
 
 .front-page .layout-content {
     margin: 0;
@@ -229,7 +239,7 @@ nav ul{
    transition: max-height 0.4s;
 }
 
-ul.menu {
+.menu {
     margin: 0;
 }
 
@@ -271,6 +281,18 @@ section {
 }
 
 
+footer {
+    text-align: center;
+    font-size: smaller;
+}
+
+
+footer div[id^="block"] {
+    display: inline-block;
+    width: 300px;
+    text-align: left;
+    vertical-align: top;
+}
 
 @media screen and (max-width: 830px) {
    nav ul { 
@@ -299,6 +321,11 @@ section {
     header {
         width: 100%;
     }
+    
+    header div:first-child {
+    width: 100%;
+    margin: auto;
+}
     
     header nav {
       text-align: center;
