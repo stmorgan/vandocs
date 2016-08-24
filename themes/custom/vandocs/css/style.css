@@ -294,6 +294,15 @@ footer div[id^="block"] {
     vertical-align: top;
 }
 
+.form-item {
+    text-align: left;
+    max-width: 200px;
+}
+
+.form-text, .form-tel, .form-email {
+    max-width: 300px;
+}
+
 @media screen and (max-width: 830px) {
    nav ul { 
         max-height: 0;
